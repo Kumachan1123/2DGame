@@ -1,0 +1,1677 @@
+fileFormatVersion: 2
+guid: e79d9e802966202488b60559849ff901
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5303914217372299654
+    second: limbusdev_world2_0
+  - first:
+      213: -3083750462355961629
+    second: limbusdev_world2_1
+  - first:
+      213: -8382383723101030354
+    second: limbusdev_world2_2
+  - first:
+      213: -7133140383684513061
+    second: limbusdev_world2_3
+  - first:
+      213: 5363342205722553318
+    second: limbusdev_world2_4
+  - first:
+      213: 1158165999479938309
+    second: limbusdev_world2_5
+  - first:
+      213: 1478354632815250743
+    second: limbusdev_world2_6
+  - first:
+      213: -392657650619973443
+    second: limbusdev_world2_7
+  - first:
+      213: 7527916449606310395
+    second: limbusdev_world2_8
+  - first:
+      213: -146188024805050078
+    second: limbusdev_world2_9
+  - first:
+      213: -7602305224805428889
+    second: limbusdev_world2_10
+  - first:
+      213: -3056653505879905164
+    second: limbusdev_world2_11
+  - first:
+      213: -4098308251676377815
+    second: limbusdev_world2_12
+  - first:
+      213: 1303065159147604063
+    second: limbusdev_world2_13
+  - first:
+      213: 7866042357016706354
+    second: limbusdev_world2_14
+  - first:
+      213: -5761925385472817038
+    second: limbusdev_world2_15
+  - first:
+      213: 2177597161523478379
+    second: limbusdev_world2_16
+  - first:
+      213: 510635266443149828
+    second: limbusdev_world2_17
+  - first:
+      213: -7294322978592075334
+    second: limbusdev_world2_18
+  - first:
+      213: -977287023720299251
+    second: limbusdev_world2_19
+  - first:
+      213: 1841966935279689829
+    second: limbusdev_world2_20
+  - first:
+      213: -3278985927143957669
+    second: limbusdev_world2_21
+  - first:
+      213: -8423814509247320102
+    second: limbusdev_world2_22
+  - first:
+      213: 3551274372436294295
+    second: limbusdev_world2_23
+  - first:
+      213: 2409620283218746343
+    second: limbusdev_world2_24
+  - first:
+      213: 4787624726338471634
+    second: limbusdev_world2_25
+  - first:
+      213: -9093456188020058069
+    second: limbusdev_world2_26
+  - first:
+      213: 7765664908033363364
+    second: limbusdev_world2_27
+  - first:
+      213: -292577335197208547
+    second: limbusdev_world2_28
+  - first:
+      213: 177517374395773045
+    second: limbusdev_world2_29
+  - first:
+      213: -5749747409412993614
+    second: limbusdev_world2_30
+  - first:
+      213: 8693013585910135501
+    second: limbusdev_world2_31
+  - first:
+      213: -5013396510830844110
+    second: limbusdev_world2_32
+  - first:
+      213: -5418752009488728022
+    second: limbusdev_world2_33
+  - first:
+      213: -4694751468129926017
+    second: limbusdev_world2_34
+  - first:
+      213: -4934545702305912861
+    second: limbusdev_world2_35
+  - first:
+      213: 8667399530820741383
+    second: limbusdev_world2_36
+  - first:
+      213: 5908554078943914796
+    second: limbusdev_world2_37
+  - first:
+      213: 4752259041303196725
+    second: limbusdev_world2_38
+  - first:
+      213: -6744928907925686599
+    second: limbusdev_world2_39
+  - first:
+      213: -4340968153485942840
+    second: limbusdev_world2_40
+  - first:
+      213: -4175249767315959831
+    second: limbusdev_world2_41
+  - first:
+      213: 8734130762894750486
+    second: limbusdev_world2_42
+  - first:
+      213: 6778986696044627372
+    second: limbusdev_world2_43
+  - first:
+      213: 381849626108590772
+    second: limbusdev_world2_44
+  - first:
+      213: -3645206633221207385
+    second: limbusdev_world2_45
+  - first:
+      213: 965772583338344465
+    second: limbusdev_world2_46
+  - first:
+      213: 309700016023785045
+    second: limbusdev_world2_47
+  - first:
+      213: 799638118377802579
+    second: limbusdev_world2_48
+  - first:
+      213: 9154305877329371069
+    second: limbusdev_world2_49
+  - first:
+      213: -6919106955769382861
+    second: limbusdev_world2_50
+  - first:
+      213: -5089052716857434325
+    second: limbusdev_world2_51
+  - first:
+      213: 459202118943249114
+    second: limbusdev_world2_52
+  - first:
+      213: 4572715106331885014
+    second: limbusdev_world2_53
+  - first:
+      213: 881578789126765176
+    second: limbusdev_world2_54
+  - first:
+      213: -2120669980155390312
+    second: limbusdev_world2_55
+  - first:
+      213: 6875346253702523885
+    second: limbusdev_world2_56
+  - first:
+      213: -5878301828140570730
+    second: limbusdev_world2_57
+  - first:
+      213: 1151555163567004600
+    second: limbusdev_world2_58
+  - first:
+      213: -4422890545919353119
+    second: limbusdev_world2_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: limbusdev_world2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 1024
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 681be9d11e94b9940800000000000000
+      internalID: 5303914217372299654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 288
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8835bfa415435d0800000000000000
+      internalID: -3083750462355961629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 303
+        width: 290
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e28fb856a6acbab80800000000000000
+      internalID: -8382383723101030354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 224
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2bd713d9ef10d90800000000000000
+      internalID: -7133140383684513061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 191
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebe3f4e15b6e6a40800000000000000
+      internalID: 5363342205722553318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_5
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 207
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50ddfed17d1a21010800000000000000
+      internalID: 1158165999479938309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 321
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d8105b4bb248410800000000000000
+      internalID: 1478354632815250743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_7
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 150
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db0057872fffc8af0800000000000000
+      internalID: -392657650619973443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_8
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 150
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf99a955028887860800000000000000
+      internalID: 7527916449606310395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_9
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 175
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 229341714c2a8fdf0800000000000000
+      internalID: -146188024805050078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_10
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 143
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76150614daf2f7690800000000000000
+      internalID: -7602305224805428889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 143
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c639cc4d59495d0800000000000000
+      internalID: -3056653505879905164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 118
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92df6cedb52ef17c0800000000000000
+      internalID: -4098308251676377815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 118
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f584e2abbda651210800000000000000
+      internalID: 1303065159147604063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 118
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d382ef8dbc92d60800000000000000
+      internalID: 7866042357016706354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 118
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2784690d3678900b0800000000000000
+      internalID: -5761925385472817038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_16
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 111
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f718cb411683e10800000000000000
+      internalID: 2177597161523478379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4028122c114261700800000000000000
+      internalID: 510635266443149828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_18
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1dc00e5eb55ca90800000000000000
+      internalID: -7294322978592075334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_19
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d058d8b31aaff62f0800000000000000
+      internalID: -977287023720299251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_20
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 51
+        width: 18
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5606c512b2bff8910800000000000000
+      internalID: 1841966935279689829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 225
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b541d0ca3be72d0800000000000000
+      internalID: -3278985927143957669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_22
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 120
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf288ac559981b80800000000000000
+      internalID: -8423814509247320102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_23
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79a730de939a84130800000000000000
+      internalID: 3551274372436294295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb54d081e0b07120800000000000000
+      internalID: 2409620283218746343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_25
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6084b925f017240800000000000000
+      internalID: 4787624726338471634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_26
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b289c74b6cd8dc180800000000000000
+      internalID: -9093456188020058069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad8b00f61f25cb60800000000000000
+      internalID: 7765664908033363364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_28
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 67
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d107d3ab67e80fbf0800000000000000
+      internalID: -292577335197208547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 90
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570f15a8c1ba67200800000000000000
+      internalID: 177517374395773045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_30
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 90
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd47b1d13bc430b0800000000000000
+      internalID: -5749747409412993614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_31
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 98
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca71df7cc9c3a870800000000000000
+      internalID: 8693013585910135501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_32
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 98
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 237aebd7f66dc6ab0800000000000000
+      internalID: -5013396510830844110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_33
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 63
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a208d74d1c9bcc4b0800000000000000
+      internalID: -5418752009488728022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f744f51e964e8deb0800000000000000
+      internalID: -4694751468129926017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_35
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7202ef3d8f48bb0800000000000000
+      internalID: -4934545702305912861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70925f093f9c84870800000000000000
+      internalID: 8667399530820741383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_37
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 35
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b23a341a66ff150800000000000000
+      internalID: 5908554078943914796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_38
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 51
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534f3856b6a63f140800000000000000
+      internalID: 4752259041303196725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_39
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 59
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b673d7f4e23562a0800000000000000
+      internalID: -6744928907925686599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_40
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 57
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cfdf2eb678c1c3c0800000000000000
+      internalID: -4340968153485942840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_41
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 66
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef899245788e06c0800000000000000
+      internalID: -4175249767315959831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 66
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613372847add53970800000000000000
+      internalID: 8734130762894750486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5c6d2cb7cc31e50800000000000000
+      internalID: 6778986696044627372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_44
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba71d9363a9c4500800000000000000
+      internalID: 381849626108590772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_45
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aac3f551ef996dc0800000000000000
+      internalID: -3645206633221207385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_46
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11081b33c0d176d00800000000000000
+      internalID: 965772583338344465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_47
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 35
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55ec70216864c4400800000000000000
+      internalID: 309700016023785045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_48
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 27
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b45cac1a2e81b00800000000000000
+      internalID: 799638118377802579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_49
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 19
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfdc7f91b0aa0f70800000000000000
+      internalID: 9154305877329371069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_50
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3387e6af1e46aff90800000000000000
+      internalID: -6919106955769382861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_51
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 20
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fd978548d0069b0800000000000000
+      internalID: -5089052716857434325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_52
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 36
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad218bbe4e96f5600800000000000000
+      internalID: 459202118943249114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_53
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 10
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd79f3792c857f30800000000000000
+      internalID: 4572715106331885014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_54
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 10
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a7b67ec3ffb3c00800000000000000
+      internalID: 881578789126765176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_55
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 16
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896d00b83edd192e0800000000000000
+      internalID: -2120669980155390312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb60c79df22a6f50800000000000000
+      internalID: 6875346253702523885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_57
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697e623c1a31c6ea0800000000000000
+      internalID: -5878301828140570730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_58
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb9dafe1552bff00800000000000000
+      internalID: 1151555163567004600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_59
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee1b026b7cbe92c0800000000000000
+      internalID: -4422890545919353119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      limbusdev_world2_0: 5303914217372299654
+      limbusdev_world2_1: -3083750462355961629
+      limbusdev_world2_10: -7602305224805428889
+      limbusdev_world2_11: -3056653505879905164
+      limbusdev_world2_12: -4098308251676377815
+      limbusdev_world2_13: 1303065159147604063
+      limbusdev_world2_14: 7866042357016706354
+      limbusdev_world2_15: -5761925385472817038
+      limbusdev_world2_16: 2177597161523478379
+      limbusdev_world2_17: 510635266443149828
+      limbusdev_world2_18: -7294322978592075334
+      limbusdev_world2_19: -977287023720299251
+      limbusdev_world2_2: -8382383723101030354
+      limbusdev_world2_20: 1841966935279689829
+      limbusdev_world2_21: -3278985927143957669
+      limbusdev_world2_22: -8423814509247320102
+      limbusdev_world2_23: 3551274372436294295
+      limbusdev_world2_24: 2409620283218746343
+      limbusdev_world2_25: 4787624726338471634
+      limbusdev_world2_26: -9093456188020058069
+      limbusdev_world2_27: 7765664908033363364
+      limbusdev_world2_28: -292577335197208547
+      limbusdev_world2_29: 177517374395773045
+      limbusdev_world2_3: -7133140383684513061
+      limbusdev_world2_30: -5749747409412993614
+      limbusdev_world2_31: 8693013585910135501
+      limbusdev_world2_32: -5013396510830844110
+      limbusdev_world2_33: -5418752009488728022
+      limbusdev_world2_34: -4694751468129926017
+      limbusdev_world2_35: -4934545702305912861
+      limbusdev_world2_36: 8667399530820741383
+      limbusdev_world2_37: 5908554078943914796
+      limbusdev_world2_38: 4752259041303196725
+      limbusdev_world2_39: -6744928907925686599
+      limbusdev_world2_4: 5363342205722553318
+      limbusdev_world2_40: -4340968153485942840
+      limbusdev_world2_41: -4175249767315959831
+      limbusdev_world2_42: 8734130762894750486
+      limbusdev_world2_43: 6778986696044627372
+      limbusdev_world2_44: 381849626108590772
+      limbusdev_world2_45: -3645206633221207385
+      limbusdev_world2_46: 965772583338344465
+      limbusdev_world2_47: 309700016023785045
+      limbusdev_world2_48: 799638118377802579
+      limbusdev_world2_49: 9154305877329371069
+      limbusdev_world2_5: 1158165999479938309
+      limbusdev_world2_50: -6919106955769382861
+      limbusdev_world2_51: -5089052716857434325
+      limbusdev_world2_52: 459202118943249114
+      limbusdev_world2_53: 4572715106331885014
+      limbusdev_world2_54: 881578789126765176
+      limbusdev_world2_55: -2120669980155390312
+      limbusdev_world2_56: 6875346253702523885
+      limbusdev_world2_57: -5878301828140570730
+      limbusdev_world2_58: 1151555163567004600
+      limbusdev_world2_59: -4422890545919353119
+      limbusdev_world2_6: 1478354632815250743
+      limbusdev_world2_7: -392657650619973443
+      limbusdev_world2_8: 7527916449606310395
+      limbusdev_world2_9: -146188024805050078
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1677 @@
+fileFormatVersion: 2
+guid: cb4fba9eaf5d14c4ab0776b96639db2d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8055238665683528676
+    second: limbusdev_world2_morning_0
+  - first:
+      213: -4237532782531843012
+    second: limbusdev_world2_morning_1
+  - first:
+      213: 4678728758971721293
+    second: limbusdev_world2_morning_2
+  - first:
+      213: 5932115586262257802
+    second: limbusdev_world2_morning_3
+  - first:
+      213: 8022572544864158244
+    second: limbusdev_world2_morning_4
+  - first:
+      213: 7096351801922729740
+    second: limbusdev_world2_morning_5
+  - first:
+      213: -3701733521284795599
+    second: limbusdev_world2_morning_6
+  - first:
+      213: 6654616672528828154
+    second: limbusdev_world2_morning_7
+  - first:
+      213: -1544138061420897991
+    second: limbusdev_world2_morning_8
+  - first:
+      213: 6131201029735714038
+    second: limbusdev_world2_morning_9
+  - first:
+      213: 2077092906751706376
+    second: limbusdev_world2_morning_10
+  - first:
+      213: -3860001210150339224
+    second: limbusdev_world2_morning_11
+  - first:
+      213: -8597524001448646083
+    second: limbusdev_world2_morning_12
+  - first:
+      213: 4506651261917510596
+    second: limbusdev_world2_morning_13
+  - first:
+      213: 1474124942463327402
+    second: limbusdev_world2_morning_14
+  - first:
+      213: -7198407004811226405
+    second: limbusdev_world2_morning_15
+  - first:
+      213: -9166495017402887240
+    second: limbusdev_world2_morning_16
+  - first:
+      213: 1764752664911095988
+    second: limbusdev_world2_morning_17
+  - first:
+      213: -1578562112641483444
+    second: limbusdev_world2_morning_18
+  - first:
+      213: -5724586235954738259
+    second: limbusdev_world2_morning_19
+  - first:
+      213: 5617171959126506744
+    second: limbusdev_world2_morning_20
+  - first:
+      213: -5808217602501007873
+    second: limbusdev_world2_morning_21
+  - first:
+      213: 8825057466095186643
+    second: limbusdev_world2_morning_22
+  - first:
+      213: 2742199830340550736
+    second: limbusdev_world2_morning_23
+  - first:
+      213: 4437309727432272348
+    second: limbusdev_world2_morning_24
+  - first:
+      213: -3717963012576581970
+    second: limbusdev_world2_morning_25
+  - first:
+      213: 3083029243043815503
+    second: limbusdev_world2_morning_26
+  - first:
+      213: -1496080022308996766
+    second: limbusdev_world2_morning_27
+  - first:
+      213: -5010732115553722174
+    second: limbusdev_world2_morning_28
+  - first:
+      213: 6888619130831075049
+    second: limbusdev_world2_morning_29
+  - first:
+      213: 7365538241645359423
+    second: limbusdev_world2_morning_30
+  - first:
+      213: -7278548674055925648
+    second: limbusdev_world2_morning_31
+  - first:
+      213: 6688692266866984690
+    second: limbusdev_world2_morning_32
+  - first:
+      213: 325223144158923411
+    second: limbusdev_world2_morning_33
+  - first:
+      213: 623085641345961618
+    second: limbusdev_world2_morning_34
+  - first:
+      213: -8244697368394947204
+    second: limbusdev_world2_morning_35
+  - first:
+      213: -1445916525136368095
+    second: limbusdev_world2_morning_36
+  - first:
+      213: -5838498353626662653
+    second: limbusdev_world2_morning_37
+  - first:
+      213: 3821054278368275965
+    second: limbusdev_world2_morning_38
+  - first:
+      213: -7572703899300912295
+    second: limbusdev_world2_morning_39
+  - first:
+      213: 3278451491309406045
+    second: limbusdev_world2_morning_40
+  - first:
+      213: 1937408750731244066
+    second: limbusdev_world2_morning_41
+  - first:
+      213: 2891071145888639478
+    second: limbusdev_world2_morning_42
+  - first:
+      213: -5636074062861304690
+    second: limbusdev_world2_morning_43
+  - first:
+      213: -112576417876735670
+    second: limbusdev_world2_morning_44
+  - first:
+      213: -2486242674373675718
+    second: limbusdev_world2_morning_45
+  - first:
+      213: 633187506506860264
+    second: limbusdev_world2_morning_46
+  - first:
+      213: -329898308711167349
+    second: limbusdev_world2_morning_47
+  - first:
+      213: 9195905659045639656
+    second: limbusdev_world2_morning_48
+  - first:
+      213: 553571414871414153
+    second: limbusdev_world2_morning_49
+  - first:
+      213: -3642332234029044128
+    second: limbusdev_world2_morning_50
+  - first:
+      213: 8389409675590457148
+    second: limbusdev_world2_morning_51
+  - first:
+      213: 755082808711967181
+    second: limbusdev_world2_morning_52
+  - first:
+      213: 8325445244612653552
+    second: limbusdev_world2_morning_53
+  - first:
+      213: -1644544885020441536
+    second: limbusdev_world2_morning_54
+  - first:
+      213: -4991905304839826198
+    second: limbusdev_world2_morning_55
+  - first:
+      213: -1845690139660242905
+    second: limbusdev_world2_morning_56
+  - first:
+      213: 6173146440329742974
+    second: limbusdev_world2_morning_57
+  - first:
+      213: -8272731590975972598
+    second: limbusdev_world2_morning_58
+  - first:
+      213: -3568396824149937793
+    second: limbusdev_world2_morning_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 1024
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1411feac1b063090800000000000000
+      internalID: -8055238665683528676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_1
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 288
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ced1db2624135c0800000000000000
+      internalID: -4237532782531843012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 303
+        width: 290
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46e9ee640f2ee040800000000000000
+      internalID: 4678728758971721293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 224
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8058bd22bb135250800000000000000
+      internalID: 5932115586262257802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_4
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 191
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4220e616937e55f60800000000000000
+      internalID: 8022572544864158244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_5
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 207
+        width: 82
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07bec2ad5e4b7260800000000000000
+      internalID: 7096351801922729740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_6
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 0
+        width: 321
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 133f9aa99fcc0acc0800000000000000
+      internalID: -3701733521284795599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_7
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 150
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af609722b92f95c50800000000000000
+      internalID: 6654616672528828154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_8
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 150
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 939d8d44d9e129ae0800000000000000
+      internalID: -1544138061420897991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_9
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 175
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc08ef1ad6661550800000000000000
+      internalID: 6131201029735714038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_10
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 143
+        width: 50
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8054b686ef053dc10800000000000000
+      internalID: 2077092906751706376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_11
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 143
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d396cb9558e6ac0800000000000000
+      internalID: -3860001210150339224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_12
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 118
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a22c9e8757fa880800000000000000
+      internalID: -8597524001448646083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 118
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbb8290277da8e30800000000000000
+      internalID: 4506651261917510596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_14
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 118
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aacd11e23d4257410800000000000000
+      internalID: 1474124942463327402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_15
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 118
+        width: 6
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd21b89c7fe1a1c90800000000000000
+      internalID: -7198407004811226405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_16
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 111
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3105c09511ac080800000000000000
+      internalID: -9166495017402887240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_17
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b8237cd239ad7810800000000000000
+      internalID: 1764752664911095988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_18
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d3d144f12d71ae0800000000000000
+      internalID: -1578562112641483444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_19
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 114
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabc3d7062f2e80b0800000000000000
+      internalID: -5724586235954738259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_20
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 51
+        width: 18
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc3502c22434fd40800000000000000
+      internalID: 5617171959126506744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_21
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 225
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff5a1c02dd0156fa0800000000000000
+      internalID: -5808217602501007873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_22
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 120
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2330d1207e87a70800000000000000
+      internalID: 8825057466095186643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_23
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050c59687304e0620800000000000000
+      internalID: 2742199830340550736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_24
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd96cfdefad749d30800000000000000
+      internalID: 4437309727432272348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_25
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6e453b654276cc0800000000000000
+      internalID: -3717963012576581970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_26
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f40a4cf03ce19ca20800000000000000
+      internalID: 3083029243043815503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_27
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 83
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269b6b2752bdc3be0800000000000000
+      internalID: -1496080022308996766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_28
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 67
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c067cb50bd467ab0800000000000000
+      internalID: -5010732115553722174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_29
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 90
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6752e1a9a499f50800000000000000
+      internalID: 6888619130831075049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_30
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 90
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31b3d8a106a73660800000000000000
+      internalID: 7365538241645359423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_31
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 98
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070918a5b866dfa90800000000000000
+      internalID: -7278548674055925648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_32
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 98
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f64282bd2203dc50800000000000000
+      internalID: 6688692266866984690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_33
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 63
+        width: 98
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a045cf9bc638400800000000000000
+      internalID: 325223144158923411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_34
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e821de615a5a800800000000000000
+      internalID: 623085641345961618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_35
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75a83cfc63f49d80800000000000000
+      internalID: -8244697368394947204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_36
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 82
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e2168c4921febe0800000000000000
+      internalID: -1445916525136368095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_37
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 35
+        width: 8
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309316a5eac79fea0800000000000000
+      internalID: -5838498353626662653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_38
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 51
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfda0a11f9c170530800000000000000
+      internalID: 3821054278368275965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_39
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 59
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95324fcece958e690800000000000000
+      internalID: -7572703899300912295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_40
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 57
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57c8d8e2466f7d20800000000000000
+      internalID: 3278451491309406045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_41
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 66
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222b1147efe03ea10800000000000000
+      internalID: 1937408750731244066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 66
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f9e21fb3e52f1820800000000000000
+      internalID: 2891071145888639478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_43
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 0
+        width: 85
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8cfb534084a8c1b0800000000000000
+      internalID: -5636074062861304690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_44
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a490f5a285c007ef0800000000000000
+      internalID: -112576417876735670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_45
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a353a88d5771f7dd0800000000000000
+      internalID: -2486242674373675718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_46
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 43
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e68e81bea889c800800000000000000
+      internalID: 633187506506860264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_47
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 35
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ac4417c37fb6bf0800000000000000
+      internalID: -329898308711167349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_48
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 27
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e57b63997b6e9f70800000000000000
+      internalID: 9195905659045639656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_49
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 19
+        width: 8
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9859835d44eaea700800000000000000
+      internalID: 553571414871414153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_50
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 18
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e6ebc8126d37dc0800000000000000
+      internalID: -3642332234029044128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_51
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 20
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c375bc4a6ab2d6470800000000000000
+      internalID: 8389409675590457148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_52
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 36
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1f74d50d79a7a00800000000000000
+      internalID: 755082808711967181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_53
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 10
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f13a12075ce98370800000000000000
+      internalID: 8325445244612653552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_54
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 10
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 044cb27e3276d29e0800000000000000
+      internalID: -1644544885020441536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_55
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 16
+        width: 33
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae452a0d29039bab0800000000000000
+      internalID: -4991905304839826198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_56
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7203c1cc89ac266e0800000000000000
+      internalID: -1845690139660242905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_57
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 1
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a42521bfb6ba550800000000000000
+      internalID: 6173146440329742974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_58
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b99b5e27a513d80800000000000000
+      internalID: -8272731590975972598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: limbusdev_world2_morning_59
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7139ee9ef18a7ec0800000000000000
+      internalID: -3568396824149937793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      limbusdev_world2_morning_0: -8055238665683528676
+      limbusdev_world2_morning_1: -4237532782531843012
+      limbusdev_world2_morning_10: 2077092906751706376
+      limbusdev_world2_morning_11: -3860001210150339224
+      limbusdev_world2_morning_12: -8597524001448646083
+      limbusdev_world2_morning_13: 4506651261917510596
+      limbusdev_world2_morning_14: 1474124942463327402
+      limbusdev_world2_morning_15: -7198407004811226405
+      limbusdev_world2_morning_16: -9166495017402887240
+      limbusdev_world2_morning_17: 1764752664911095988
+      limbusdev_world2_morning_18: -1578562112641483444
+      limbusdev_world2_morning_19: -5724586235954738259
+      limbusdev_world2_morning_2: 4678728758971721293
+      limbusdev_world2_morning_20: 5617171959126506744
+      limbusdev_world2_morning_21: -5808217602501007873
+      limbusdev_world2_morning_22: 8825057466095186643
+      limbusdev_world2_morning_23: 2742199830340550736
+      limbusdev_world2_morning_24: 4437309727432272348
+      limbusdev_world2_morning_25: -3717963012576581970
+      limbusdev_world2_morning_26: 3083029243043815503
+      limbusdev_world2_morning_27: -1496080022308996766
+      limbusdev_world2_morning_28: -5010732115553722174
+      limbusdev_world2_morning_29: 6888619130831075049
+      limbusdev_world2_morning_3: 5932115586262257802
+      limbusdev_world2_morning_30: 7365538241645359423
+      limbusdev_world2_morning_31: -7278548674055925648
+      limbusdev_world2_morning_32: 6688692266866984690
+      limbusdev_world2_morning_33: 325223144158923411
+      limbusdev_world2_morning_34: 623085641345961618
+      limbusdev_world2_morning_35: -8244697368394947204
+      limbusdev_world2_morning_36: -1445916525136368095
+      limbusdev_world2_morning_37: -5838498353626662653
+      limbusdev_world2_morning_38: 3821054278368275965
+      limbusdev_world2_morning_39: -7572703899300912295
+      limbusdev_world2_morning_4: 8022572544864158244
+      limbusdev_world2_morning_40: 3278451491309406045
+      limbusdev_world2_morning_41: 1937408750731244066
+      limbusdev_world2_morning_42: 2891071145888639478
+      limbusdev_world2_morning_43: -5636074062861304690
+      limbusdev_world2_morning_44: -112576417876735670
+      limbusdev_world2_morning_45: -2486242674373675718
+      limbusdev_world2_morning_46: 633187506506860264
+      limbusdev_world2_morning_47: -329898308711167349
+      limbusdev_world2_morning_48: 9195905659045639656
+      limbusdev_world2_morning_49: 553571414871414153
+      limbusdev_world2_morning_5: 7096351801922729740
+      limbusdev_world2_morning_50: -3642332234029044128
+      limbusdev_world2_morning_51: 8389409675590457148
+      limbusdev_world2_morning_52: 755082808711967181
+      limbusdev_world2_morning_53: 8325445244612653552
+      limbusdev_world2_morning_54: -1644544885020441536
+      limbusdev_world2_morning_55: -4991905304839826198
+      limbusdev_world2_morning_56: -1845690139660242905
+      limbusdev_world2_morning_57: 6173146440329742974
+      limbusdev_world2_morning_58: -8272731590975972598
+      limbusdev_world2_morning_59: -3568396824149937793
+      limbusdev_world2_morning_6: -3701733521284795599
+      limbusdev_world2_morning_7: 6654616672528828154
+      limbusdev_world2_morning_8: -1544138061420897991
+      limbusdev_world2_morning_9: 6131201029735714038
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

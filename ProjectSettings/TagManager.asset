@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - SolidObjects
-  - 
+  - LongGrass
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1272958025
+    locked: 0
+  - name: New Layer 4
+    uniqueID: 2223109353
     locked: 0
   m_RenderingLayers:
   - Default
