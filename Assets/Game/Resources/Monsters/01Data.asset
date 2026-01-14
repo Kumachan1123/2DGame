@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107fea4b994a35243895d771a0c5f53e, type: 3}
+  m_Name: 01Data
+  m_EditorClassIdentifier: Assembly-CSharp::MonsterBase
+  m_name: 01
+  m_description: 
+  m_frontSprite: {fileID: 4211761467620165101, guid: 70ac6508738f90a4f962e7dcbcc67425, type: 3}
+  m_backSprite: {fileID: -6774210268181729380, guid: df2d8d1436473584780ac712c8eba767, type: 3}
+  m_type1: 5
+  m_type2: 0
+  m_maxHP: 45
+  m_attack: 49
+  m_defense: 49
+  m_specialAttack: 65
+  m_specialDefense: 65
+  m_speed: 49
+  m_learnableMoves:
+  - m_moveBase: {fileID: 11400000, guid: 0704c62eac36e284ea54388f22ec5bc3, type: 2}
+    m_level: 5
+  - m_moveBase: {fileID: 11400000, guid: a49d5a5fe22c3d44993c0d92954c1cd5, type: 2}
+    m_level: 10
+  - m_moveBase: {fileID: 11400000, guid: 53486eb29920bb54baab1edb0a0dc3ef, type: 2}
+    m_level: 20

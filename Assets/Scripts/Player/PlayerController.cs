@@ -11,7 +11,10 @@ public class PlayerController : MonoBehaviour
     Vector2 m_input;
     PlayerInputReceiver m_inputReceiver;
     Animator m_animator;
+    // 当たり判定を行うレイヤーマスク
     [SerializeField] LayerMask m_solidObjects;
+    // 草むら判定のレイヤーマスク
+    [SerializeField] LayerMask m_longGrass;
 
     private void Awake()
     {
@@ -49,6 +52,7 @@ public class PlayerController : MonoBehaviour
                 Vector2 targetPos = transform.position;
                 targetPos += m_input;
                 if (IsWalkable(targetPos)) StartCoroutine(Move(targetPos));
+                CheckForEncounters();
             }
         }
         m_animator.SetBool("isMoving", m_isMoving);
@@ -75,5 +79,17 @@ public class PlayerController : MonoBehaviour
     {
 
         return !Physics2D.OverlapCircle(targetPos, 0.2f, m_solidObjects);
+    }
+    // 自分の場所から円のレイを飛ばして、草むらに当たったらランダムエンカウント
+    void CheckForEncounters()
+    {
+        if (Physics2D.OverlapCircle(transform.position, 0.2f, m_longGrass))
+        {
+            // ランダムエンカウント
+            if (Random.Range(0, 100) < 10)
+            {
+                Debug.Log("エンカウント発生！");
+            }
+        }
     }
 }
