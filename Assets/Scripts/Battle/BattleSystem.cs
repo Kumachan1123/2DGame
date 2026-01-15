@@ -19,27 +19,53 @@ public class BattleSystem : MonoBehaviour
     [SerializeField] BattleHud m_playerHud;
     [SerializeField] BattleHud m_enemyHud;
     [SerializeField] BattleDialogBox m_dialogBox;
-    int m_currentAction = 0;// 現在のアクション 0:Fight, 1:Run
-    public int m_currentMove = 0;// 0:左上　1:右上　2:左下　3:右下
+    // フェード管理クラス
+    [SerializeField, Header("フェード")]
+    private UIFade m_fade;
+    // プレイヤー
+    [SerializeField, Header("プレイヤー")]
+    private GameObject m_player;
+    public int m_currentAction = 0;// 現在のアクション 0:Fight, 1:Run
+    int m_currentMove = 0;// 0:左上　1:右上　2:左下　3:右下
     BattleState m_state;
     // インプットレシーバー
     private BattleInputReceiver m_inputReceiver;
 
+    // 有効化されたときに一度だけ呼ばれる
+    private void OnEnable()
+    {
+        // アクションセレクターを有効化
+        m_dialogBox.EnableActionSelector(false);
+        m_playerHud.EnableBattleHud(false);
+        m_enemyHud.EnableBattleHud(false);
+        m_fade.FadeInWithCallback(() =>
+        {
+
+            // フィールド上のプレイヤーを非アクティブにする
+            m_player.SetActive(false);
+            // 戦うにカーソルが置かれた状態にする
+            m_currentAction = 0;
+            // ダイアログを表示
+            StartCoroutine(SetUpBattle());
+        });
+
+    }
+
     void Start()
     {
         m_inputReceiver = GetComponent<BattleInputReceiver>();
-        // ダイアログを表示
-        StartCoroutine(SetUpBattle());
+
     }
 
     IEnumerator SetUpBattle()
     {
         // バトルステートを設定
         m_state = BattleState.START;
-
         m_playerUnit.SetUp();// プレイヤーのモンスターをセットアップ
         m_enemyUnit.SetUp();// 敵のモンスターをセットアップ
 
+        m_playerHud.EnableBattleHud(true);// プレイヤーのHUDを有効化
+        m_enemyHud.EnableBattleHud(true);// 敵のHUDを有効化
         m_playerHud.SetData(m_playerUnit.Monster);// プレイヤーのHUDをセット
         m_enemyHud.SetData(m_enemyUnit.Monster);// 敵のHUDをセット
         // 技の反映
@@ -64,7 +90,7 @@ public class BattleSystem : MonoBehaviour
         m_dialogBox.EnableActionSelector(false);
         m_dialogBox.EnableMoveSelector(true);
     }
-    // PlayerMoveの実行
+    // PlayerMoveの実行(プレイヤーの技選択後)
     IEnumerator PerformPlayerMove()
     {
         m_state = BattleState.BUSY;
@@ -73,21 +99,33 @@ public class BattleSystem : MonoBehaviour
         // メッセージを表示
         yield return m_dialogBox.TypeDialog($"{m_playerUnit.Monster.Base.Name} は{move.Base.Name}をつかった");
         yield return new WaitForSeconds(1);
+        // 攻撃演出
+        m_playerUnit.PlayerAttackAnimation();
+        yield return new WaitForSeconds(0.7f);
+        // 敵ヒット演出
+        m_enemyUnit.PlayerHitAnimation();
+        yield return new WaitForSeconds(0.2f);
         // ダメージ計算
-        bool isFainted = m_enemyUnit.Monster.TakeDamage(move, m_playerUnit.Monster);
+        DamageDetails damageDetails = m_enemyUnit.Monster.TakeDamage(move, m_playerUnit.Monster);
         // HPバーを更新
         yield return m_enemyHud.UpdateHP();
+        // 相性・クリティカルのメッセージ表示
+        yield return ShowDamageDetails(damageDetails);
         // 戦闘不能ならメッセージ
-        if (isFainted)
+        if (damageDetails.Fainted)
         {
             yield return m_dialogBox.TypeDialog($"{m_enemyUnit.Monster.Base.Name} はたおれた！");
+            // 戦闘不能演出
+            m_enemyUnit.PlayerFaintAnimation();
+            // フィールドに戻る
+            StartCoroutine(ExitBattleSystem(2f));
         }
         else
         {     // 戦闘可能ならEnemyMove();
             StartCoroutine(EnemyMove());
         }
     }
-
+    // EnemyMoveの実行(敵の技選択後)
     IEnumerator EnemyMove()
     {
         m_state = BattleState.ENEMYMOVE;
@@ -96,21 +134,58 @@ public class BattleSystem : MonoBehaviour
         // メッセージを表示
         yield return m_dialogBox.TypeDialog($"{m_enemyUnit.Monster.Base.Name} は{move.Base.Name}をつかった");
         yield return new WaitForSeconds(1);
+        // 攻撃演出
+        m_enemyUnit.PlayerAttackAnimation();
+        yield return new WaitForSeconds(0.7f);
+        // プレイヤーヒット演出
+        m_playerUnit.PlayerHitAnimation();
+        yield return new WaitForSeconds(0.2f);
         // ダメージ計算
-        bool isFainted = m_playerUnit.Monster.TakeDamage(move, m_enemyUnit.Monster);
+        DamageDetails damageDetails = m_playerUnit.Monster.TakeDamage(move, m_enemyUnit.Monster);
         // HPバーを更新
         yield return m_playerHud.UpdateHP();
+        // クリティカル・相性のメッセージ表示
+        yield return ShowDamageDetails(damageDetails);
         // 戦闘不能ならメッセージ
-        if (isFainted)
+        if (damageDetails.Fainted)
         {
             yield return m_dialogBox.TypeDialog($"{m_playerUnit.Monster.Base.Name} はたおれた！");
+            // 戦闘不能演出
+            m_playerUnit.PlayerFaintAnimation();
+            // フィールドに戻る
+            StartCoroutine(ExitBattleSystem(2f));
         }
         else
         {     // 戦闘可能ならPlayerAction();
             PlayerAction();
         }
     }
-
+    // クリティカル・タイプ相性のメッセージ表示
+    IEnumerator ShowDamageDetails(DamageDetails damageDetails)
+    {
+        float critical = damageDetails.Critical;
+        float typeEffectiveness = damageDetails.TypeEffectiveness;
+        if (critical > 1f)
+        {
+            yield return m_dialogBox.TypeDialog("きゅうしょに あたった！");
+            yield return new WaitForSeconds(1);
+        }
+        if (typeEffectiveness > 1f)
+        {
+            yield return m_dialogBox.TypeDialog("こうかは ばつぐんだ！");
+            yield return new WaitForSeconds(1);
+        }
+        else if (typeEffectiveness < 1f && typeEffectiveness > 0f)
+        {
+            yield return m_dialogBox.TypeDialog("こうかは いまひとつのようだ...");
+            yield return new WaitForSeconds(1);
+        }
+        else if (typeEffectiveness == 0f)
+        {
+            yield return m_dialogBox.TypeDialog("こうかは なかった...");
+            yield return new WaitForSeconds(1);
+        }
+    }
     void Update()
     {
         if (m_state == BattleState.PLAYERACTION)
@@ -136,7 +211,18 @@ public class BattleSystem : MonoBehaviour
 
         if (m_inputReceiver.GetInputButton(BattleInputReceiver.Actions.SELECT, BattleInputReceiver.InputType.PRESSED))
         {
-            PlayerMove();
+            switch (m_currentAction)
+            {
+                case 0:
+                    Debug.Log("Fightが選ばれた");
+                    PlayerMove();
+                    break;
+                case 1:
+                    Debug.Log("Runが選ばれた");
+                    StartCoroutine(m_dialogBox.TypeDialog("逃げ出した！"));
+                    StartCoroutine(ExitBattleSystem(2f));
+                    break;
+            }
         }
     }
 
@@ -176,10 +262,19 @@ public class BattleSystem : MonoBehaviour
     }
 
 
-    /// <summary>
-    /// ・メッセージが出て、１秒後にアクションの選択を表示する
-    /// ・Zボタンを押すと、MoveSelectorとMoveDetailsを表示する
-    /// </summary>
 
+    private IEnumerator ExitBattleSystem(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        m_fade.FadeOutWithCallback(() =>
+        {
+            m_player.SetActive(true);
+            m_player.GetComponent<PlayerController>().IsEncountered = false;
+            // ダイアログテキストを初期化
+            m_dialogBox.InitializeDialogText();
+            // バトルシステムを無効化してフィールドに戻る
+            this.gameObject.SetActive(false);
+        });
+    }
 
 }

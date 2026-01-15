@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem.XR;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,23 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask m_solidObjects;
     // 草むら判定のレイヤーマスク
     [SerializeField] LayerMask m_longGrass;
+    // フェード管理クラス
+    [SerializeField, Header("フェード")]
+    private UIFade m_fade;
+    // 戦闘システムオブジェクト
+    [SerializeField] GameObject m_battleSystem;
+    // エンカウントフラグ
+    private bool m_isEncountered = false;
+
+    public bool IsEncountered { get => m_isEncountered; set => m_isEncountered = value; }
+
+    private void OnEnable()
+    {
+        m_fade.FadeInWithCallback(() =>
+        {
+            // フェードイン完了後の処理（必要ならここに追加）
+        });
+    }
 
     private void Awake()
     {
@@ -32,6 +50,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // エンカウント済みなら何もしない
+        if (IsEncountered) return;
         // 動いていない時
         if (!m_isMoving)
         {
@@ -45,6 +65,7 @@ public class PlayerController : MonoBehaviour
             // 入力があったら
             if (m_input != Vector2.zero)
             {
+                CheckForEncounters();
                 // アニメーション更新
                 m_animator.SetFloat("moveX", m_input.x);
                 m_animator.SetFloat("moveY", m_input.y);
@@ -52,7 +73,6 @@ public class PlayerController : MonoBehaviour
                 Vector2 targetPos = transform.position;
                 targetPos += m_input;
                 if (IsWalkable(targetPos)) StartCoroutine(Move(targetPos));
-                CheckForEncounters();
             }
         }
         m_animator.SetBool("isMoving", m_isMoving);
@@ -89,7 +109,19 @@ public class PlayerController : MonoBehaviour
             if (Random.Range(0, 100) < 10)
             {
                 Debug.Log("エンカウント発生！");
+                IsEncountered = true;
+                m_fade.FadeOutWithCallback(() =>
+                {
+                    StartCoroutine(EnterToBattle(0.2f));
+                });
             }
         }
     }
+
+    private IEnumerator EnterToBattle(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        m_battleSystem.SetActive(true);
+    }
+
 }

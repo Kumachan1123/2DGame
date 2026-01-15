@@ -92,6 +92,12 @@ public class BattleDialogBox : MonoBehaviour
         }
     }
 
+    public void InitializeDialogText()
+    {
+        m_dialogText.text = "";
+    }
+
+
 
     // move.Base.Type.ToString()‚Í‰pŒê‚È‚Ì‚Å“ú–{Œê‚É‚·‚é
     string GetMoveName(MonsterType type)
@@ -141,3 +147,5 @@ public class BattleDialogBox : MonoBehaviour
         }
     }
 }
+
+
