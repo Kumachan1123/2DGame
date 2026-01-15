@@ -6246,7 +6246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleUnit
   m_base: {fileID: 11400000, guid: 6dbfd73640cd56545b54fab980d563e7, type: 2}
-  m_level: 3
+  m_level: 15
   m_isPlayerUnit: 0
 --- !u!1 &1956623597
 GameObject:

@@ -12,4 +12,24 @@ public class HPBar : MonoBehaviour
     {
         m_health.transform.localScale = new Vector3(hp, 1, 1);
     }
+
+    public IEnumerator SetHPSmooth(float newHP)
+    {
+        // 現在のHPを取得
+        float currentHP = m_health.transform.localScale.x;
+        // HPの変化量
+        float changeAmount = currentHP - newHP;
+        // HPが変化するまでループ
+        while (currentHP - newHP > Mathf.Epsilon)
+        {
+            // 現在のHPを徐々に新しいHPに近づける
+            currentHP -= changeAmount * Time.deltaTime;
+            // HPバーのスケールを更新
+            m_health.transform.localScale = new Vector3(currentHP, 1, 1);
+            // 次のフレームまで待機
+            yield return null;
+        }
+        // HPバーのスケールを更新
+        m_health.transform.localScale = new Vector3(currentHP, 1, 1);
+    }
 }

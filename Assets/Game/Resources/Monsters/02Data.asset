@@ -24,4 +24,8 @@ MonoBehaviour:
   m_specialAttack: 65
   m_specialDefense: 65
   m_speed: 49
-  m_learnableMoves: []
+  m_learnableMoves:
+  - m_moveBase: {fileID: 11400000, guid: 0704c62eac36e284ea54388f22ec5bc3, type: 2}
+    m_level: 5
+  - m_moveBase: {fileID: 11400000, guid: da2234d6e571b004b8bcc1b2dbf8e7ca, type: 2}
+    m_level: 10

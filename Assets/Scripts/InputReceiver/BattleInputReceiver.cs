@@ -13,12 +13,12 @@ public class BattleInputReceiver : MonoBehaviour
     // アクション
     public enum Actions : uint
     {
-        SHOW = 0,        //	表示
+        SELECT = 0,     //	決定
         UP,             //	上移動
         DOWN,           //	下移動
         LEFT,           //	左移動
         RIGHT,          //	右移動
-        OVER_ID      //	最大数
+        OVER_ID         //	最大数
     };
 
     // アクションの最大数
@@ -27,7 +27,7 @@ public class BattleInputReceiver : MonoBehaviour
     // アクション名（上記アクションのインデックスに依存）
     private static readonly string[] ACTION_NAME =
     {
-        "Show",     // 表示
+        "Select", // 決定
         "Up",     // 上移動
         "Down",   // 下移動
         "Left",   // 左移動

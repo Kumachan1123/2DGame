@@ -64,6 +64,52 @@ public class BattleSystem : MonoBehaviour
         m_dialogBox.EnableActionSelector(false);
         m_dialogBox.EnableMoveSelector(true);
     }
+    // PlayerMoveの実行
+    IEnumerator PerformPlayerMove()
+    {
+        m_state = BattleState.BUSY;
+        // 技を決定
+        Move move = m_playerUnit.Monster.Moves[m_currentMove];
+        // メッセージを表示
+        yield return m_dialogBox.TypeDialog($"{m_playerUnit.Monster.Base.Name} は{move.Base.Name}をつかった");
+        yield return new WaitForSeconds(1);
+        // ダメージ計算
+        bool isFainted = m_enemyUnit.Monster.TakeDamage(move, m_playerUnit.Monster);
+        // HPバーを更新
+        yield return m_enemyHud.UpdateHP();
+        // 戦闘不能ならメッセージ
+        if (isFainted)
+        {
+            yield return m_dialogBox.TypeDialog($"{m_enemyUnit.Monster.Base.Name} はたおれた！");
+        }
+        else
+        {     // 戦闘可能ならEnemyMove();
+            StartCoroutine(EnemyMove());
+        }
+    }
+
+    IEnumerator EnemyMove()
+    {
+        m_state = BattleState.ENEMYMOVE;
+        // 適当な技を選ぶ
+        Move move = m_enemyUnit.Monster.GetRandomMove();
+        // メッセージを表示
+        yield return m_dialogBox.TypeDialog($"{m_enemyUnit.Monster.Base.Name} は{move.Base.Name}をつかった");
+        yield return new WaitForSeconds(1);
+        // ダメージ計算
+        bool isFainted = m_playerUnit.Monster.TakeDamage(move, m_enemyUnit.Monster);
+        // HPバーを更新
+        yield return m_playerHud.UpdateHP();
+        // 戦闘不能ならメッセージ
+        if (isFainted)
+        {
+            yield return m_dialogBox.TypeDialog($"{m_playerUnit.Monster.Base.Name} はたおれた！");
+        }
+        else
+        {     // 戦闘可能ならPlayerAction();
+            PlayerAction();
+        }
+    }
 
     void Update()
     {
@@ -88,7 +134,7 @@ public class BattleSystem : MonoBehaviour
 
         m_dialogBox.UpdateActionSelection(m_currentAction);
 
-        if (m_inputReceiver.GetInputButton(BattleInputReceiver.Actions.SHOW, BattleInputReceiver.InputType.PRESSED))
+        if (m_inputReceiver.GetInputButton(BattleInputReceiver.Actions.SELECT, BattleInputReceiver.InputType.PRESSED))
         {
             PlayerMove();
         }
@@ -116,6 +162,17 @@ public class BattleSystem : MonoBehaviour
 
         // 選択中の技の文字の色を変える
         m_dialogBox.UpdateMoveSelection(m_currentMove, m_playerUnit.Monster.Moves[m_currentMove]);
+        if (m_inputReceiver.GetInputButton(BattleInputReceiver.Actions.SELECT, BattleInputReceiver.InputType.PRESSED))
+        {
+            // 技が選ばれたときの処理
+            Debug.Log($"{m_playerUnit.Monster.Moves[m_currentMove].Base.Name} が選ばれた");
+            // 技選択のUIは非表示にする
+            m_dialogBox.EnableMoveSelector(false);
+            // メッセージ復活
+            m_dialogBox.EnableDialogText(true);
+            // 技の実行
+            StartCoroutine(PerformPlayerMove());
+        }
     }
 
 

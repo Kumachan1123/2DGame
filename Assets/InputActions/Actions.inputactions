@@ -175,7 +175,7 @@
             "id": "fd0b03ed-1ebf-421b-be07-1b0d727370d9",
             "actions": [
                 {
-                    "name": "Show",
+                    "name": "Select",
                     "type": "Button",
                     "id": "9a03e634-f4d6-4db8-8b18-1c657d433915",
                     "expectedControlType": "",
@@ -228,7 +228,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Show",
+                    "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
