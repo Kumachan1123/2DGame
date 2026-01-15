@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 107fea4b994a35243895d771a0c5f53e, type: 3}
   m_Name: 02Data
   m_EditorClassIdentifier: Assembly-CSharp::MonsterBase
-  m_name: 02
+  m_name: "\u30A2\u30EF\u30CB"
   m_description: 
   m_frontSprite: {fileID: -3552610746455952701, guid: 2ca7dca6b131d8c408e735712495d7d2, type: 3}
   m_backSprite: {fileID: -6774210268181729380, guid: df2d8d1436473584780ac712c8eba767, type: 3}
