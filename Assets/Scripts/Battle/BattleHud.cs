@@ -23,4 +23,9 @@ public class BattleHud : MonoBehaviour
         Debug.Log("HPバー更新: " + (float)m_monster.HP / m_monster.MaxHP);
         yield return m_hpBar.SetHPSmooth((float)m_monster.HP / m_monster.MaxHP);
     }
+
+    public void EnableBattleHud(bool enabled)
+    {
+        gameObject.SetActive(enabled);
+    }
 }

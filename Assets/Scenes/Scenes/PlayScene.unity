@@ -1014,6 +1014,8 @@ MonoBehaviour:
   m_longGrass:
     serializedVersion: 2
     m_Bits: 128
+  m_fade: {fileID: 219129010}
+  m_battleSystem: {fileID: 1562773431}
 --- !u!114 &454701874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2694,7 +2696,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1093412082
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3909,7 +3911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1562773432
 Transform:
   m_ObjectHideFlags: 0
@@ -3944,7 +3946,9 @@ MonoBehaviour:
   m_playerHud: {fileID: 1776105539}
   m_enemyHud: {fileID: 1095305007}
   m_dialogBox: {fileID: 237801100}
-  m_currentMove: 0
+  m_fade: {fileID: 219129010}
+  m_player: {fileID: 454701872}
+  m_currentAction: 0
 --- !u!114 &1562773434
 MonoBehaviour:
   m_ObjectHideFlags: 0
