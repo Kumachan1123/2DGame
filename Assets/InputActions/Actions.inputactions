@@ -51,6 +51,54 @@
             ]
         },
         {
+            "name": "Play",
+            "id": "7996f1a3-67f1-4459-90bb-fdb13fe36d83",
+            "actions": [
+                {
+                    "name": "Enter",
+                    "type": "Button",
+                    "id": "6cdc77d1-7143-442d-ba3c-590bd03a4f66",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Exit",
+                    "type": "Button",
+                    "id": "d9e17394-32fa-4c9c-8ff7-f51aaa50bb29",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "7e47dc3c-cf5e-4215-99e2-384bebb71abe",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Enter",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0bfeb176-b922-4574-975f-175c27a466e0",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Exit",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
             "name": "Player",
             "id": "30e5a936-772b-47d7-9bc7-caa091daadad",
             "actions": [
