@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a82ffde11ce0b4c998486132035f14, type: 3}
   m_Name: Move2
   m_EditorClassIdentifier: Assembly-CSharp::MoveBase
-  m_name: "\u62802"
-  m_description: "\u3059\u3054\u3044\u3064\u3088\u3044"
+  m_name: "\u306A\u304D\u3054\u3048"
+  m_description: "\u307E\u3058\u3064\u304B\u3048\u306A\u3044"
   m_type: 1
   m_power: 34
   m_accuracy: 100
-  m_maxPP: 5
+  m_maxPP: 40
