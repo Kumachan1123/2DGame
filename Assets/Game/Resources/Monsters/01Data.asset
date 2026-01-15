@@ -15,7 +15,7 @@ MonoBehaviour:
   m_name: 01
   m_description: 
   m_frontSprite: {fileID: 4211761467620165101, guid: 70ac6508738f90a4f962e7dcbcc67425, type: 3}
-  m_backSprite: {fileID: -6774210268181729380, guid: df2d8d1436473584780ac712c8eba767, type: 3}
+  m_backSprite: {fileID: -6033384223393748019, guid: 248fc50e5a93ad94d98311cbd9f5cef1, type: 3}
   m_type1: 5
   m_type2: 0
   m_maxHP: 45
