@@ -29,7 +29,7 @@
                 {
                     "name": "",
                     "id": "42ab1e20-09fa-4b4c-a230-ba6d3c5b6362",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -77,7 +77,7 @@
                 {
                     "name": "",
                     "id": "7e47dc3c-cf5e-4215-99e2-384bebb71abe",
-                    "path": "<Keyboard>/space",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -224,7 +224,7 @@
                 {
                     "name": "",
                     "id": "d497fa90-be43-4044-be75-e230dccd13eb",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
