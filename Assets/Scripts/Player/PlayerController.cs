@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             // 入力があったら
             if (m_input != Vector2.zero)
             {
-                CheckForEncounters();
+
                 // アニメーション更新
                 m_animator.SetFloat("moveX", m_input.x);
                 m_animator.SetFloat("moveY", m_input.y);
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Move(Vector3 targetPos)
     {
         m_isMoving = true;
-
+        CheckForEncounters();
         // targetPosと現在のpisitionの差がある間は、MoveTowardsでtargetPosに近く
         while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
         {
@@ -103,6 +103,9 @@ public class PlayerController : MonoBehaviour
     // 自分の場所から円のレイを飛ばして、草むらに当たったらランダムエンカウント
     void CheckForEncounters()
     {
+        // レイを可視化
+        Debug.DrawRay(transform.position, Vector3.forward * 0.2f, Color.red, 1f);
+
         if (Physics2D.OverlapCircle(transform.position, 0.2f, m_longGrass))
         {
             // ランダムエンカウント
