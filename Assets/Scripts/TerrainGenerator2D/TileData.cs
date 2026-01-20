@@ -36,4 +36,32 @@ public class TileData : ScriptableObject
     /// </summary>
     [Range(0f, 1f)]
     public float Probability;
+
+    /// <summary>
+    /// このタイルが対応するバイオーム
+    /// </summary>
+    public BiomeType Biome;
+    public enum BiomeType
+    {
+        Any,
+        Plain,
+        Forest,
+    }
+    /// <summary>
+    /// 採掘可能かどうか
+    /// </summary>
+    public bool IsMinable;
+    /// <summary>
+    /// 硬さ（採掘にかかる時間などに影響）
+    /// </summary>
+    public float Hardness;
+    /// <summary>
+    /// ドロップするアイテムのプレハブ
+    /// </summary>
+    public GameObject DropPrefab;
+    /// <summary>
+    /// アイテムのアイコン
+    /// </summary>
+    public Sprite Icon;
+
 }

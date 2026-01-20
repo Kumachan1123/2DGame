@@ -1,13 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using static TileData;
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
 /// <summary>
-/// TileDataを使って地表・洞窟・鉱石を含む2D地形を生成するクラス
+/// TileDataを使って地表・洞窟・鉱石・森を含む2D地形を生成するクラス
+/// 洞窟生成と森生成は専用クラスに委譲する
 /// </summary>
 public class TerrainGenerator2D : MonoBehaviour
 {
@@ -17,9 +19,13 @@ public class TerrainGenerator2D : MonoBehaviour
     public Tilemap groundTilemap;
 
     /// <summary>
+    /// 使用するタイル定義の一覧(スクリプタブルオブジェクト）
+    /// </summary>
+    public TileDefinitions tileDefinitionsSO;
+    /// <summary>
     /// 使用するタイル定義の一覧
     /// </summary>
-    public List<TileData> tileDefinitions = new List<TileData>();
+    private List<TileData> tileDefinitions = new List<TileData>();
 
     /// <summary>
     /// 横方向の生成サイズ
@@ -58,6 +64,17 @@ public class TerrainGenerator2D : MonoBehaviour
     public int wallThreshold = 4;
 
     /// <summary>
+    /// バイオーム用ノイズの細かさ
+    /// </summary>
+    public float biomeNoiseScale = 0.01f;
+
+    /// <summary>
+    /// 森になるしきい値
+    /// </summary>
+    [Range(0f, 1f)]
+    public float forestThreshold = 0.6f;
+
+    /// <summary>
     /// シード値
     /// </summary>
     public int seed = 12345;
@@ -68,11 +85,29 @@ public class TerrainGenerator2D : MonoBehaviour
     public bool generateInEditMode = true;
 
     /// <summary>
-    /// 内部的に使う洞窟マップ
-    /// true = 壁  false = 空洞
+    /// 洞窟マップ
     /// </summary>
     private bool[,] caveMap;
 
+    private CaveGenerator caveGenerator;
+    private ForestGenerator forestGenerator;
+
+    /// <summary>
+    /// 起動時の処理
+    /// </summary>
+    private void Awake()
+    {
+
+
+    }
+    private void ReadTileDefinitions()
+    {
+        /// タイル定義一覧を取得
+        if (tileDefinitionsSO != null)
+        {
+            tileDefinitions = tileDefinitionsSO.TileDefinitionList;
+        }
+    }
     /// <summary>
     /// 開始時に地形を生成する
     /// </summary>
@@ -101,6 +136,7 @@ public class TerrainGenerator2D : MonoBehaviour
     /// </summary>
     public void GenerateFromEditor()
     {
+        ReadTileDefinitions();
         GenerateTerrain();
     }
 
@@ -109,53 +145,48 @@ public class TerrainGenerator2D : MonoBehaviour
     /// </summary>
     private void GenerateTerrain()
     {
-        /// Tilemapが未設定なら何もしない
         if (groundTilemap == null)
         {
             return;
         }
 
-        /// 既存タイルをすべて削除
         groundTilemap.ClearAllTiles();
 
-        /// 乱数の初期化
         Random.InitState(seed);
 
-        /// 洞窟マップを初期化
-        InitializeCaveMap();
+        /// 洞窟ジェネレーター生成
+        caveGenerator = new CaveGenerator(width, maxHeight);
 
-        /// セルオートマトンで洞窟を整形
-        for (int i = 0; i < cellularIterations; i++)
-        {
-            caveMap = DoCellularStep(caveMap);
-        }
+        caveMap = caveGenerator.Generate(
+            seed,
+            caveNoiseScale,
+            caveThreshold,
+            cellularIterations,
+            wallThreshold
+        );
 
-        /// 地表ノイズ用オフセット
         float terrainOffset = Random.Range(0f, 10000f);
 
-        /// 横方向に地形を生成
+        /// 地表と地中タイル配置
         for (int x = 0; x < width; x++)
         {
-            /// 地表の高さを決定
             float noiseValue = Mathf.PerlinNoise((x + terrainOffset) * terrainNoiseScale, 0f);
             int surfaceHeight = Mathf.FloorToInt(noiseValue * maxHeight);
 
-            /// 下から地表まで積む
+            float biomeNoise = Mathf.PerlinNoise((x + terrainOffset) * biomeNoiseScale, 0f);
+            bool isForest = biomeNoise > forestThreshold;
+
             for (int y = 0; y <= surfaceHeight; y++)
             {
-                /// 地表付近は洞窟を作らない
                 bool isSurfaceLayer = y >= surfaceHeight - 1;
 
-                /// 洞窟ならスキップ
                 if (!isSurfaceLayer && caveMap[x, y] == false)
                 {
                     continue;
                 }
 
-                /// 配置するタイルを決定
-                TileBase tile = SelectTileForDepthAndLayer(y, surfaceHeight);
+                TileBase tile = SelectTileForDepthAndLayer(y, surfaceHeight, isForest);
 
-                /// タイルがあれば配置
                 if (tile != null)
                 {
                     Vector3Int tilePosition = new Vector3Int(x, y, 0);
@@ -163,138 +194,58 @@ public class TerrainGenerator2D : MonoBehaviour
                 }
             }
         }
+
+        /// 森ジェネレーター生成
+        forestGenerator = new ForestGenerator(
+            groundTilemap,
+            tileDefinitions,
+            maxHeight,
+            seed
+        );
+
+        forestGenerator.Generate(width);
     }
 
     /// <summary>
-    /// 洞窟マップの初期配置を行う
+    /// 深さとバイオームから配置タイルを選ぶ
     /// </summary>
-    private void InitializeCaveMap()
+    private TileBase SelectTileForDepthAndLayer(int depth, int surfaceHeight, bool isForest)
     {
-        caveMap = new bool[width, maxHeight + 1];
-
-        float offsetX = Random.Range(0f, 10000f);
-        float offsetY = Random.Range(0f, 10000f);
-
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y <= maxHeight; y++)
-            {
-                /// 上の方は必ず空にする
-                if (y > maxHeight * 0.8f)
-                {
-                    caveMap[x, y] = false;
-                    continue;
-                }
-
-                /// PerlinNoiseで洞窟の元を生成
-                float noise = Mathf.PerlinNoise(
-                    (x + offsetX) * caveNoiseScale,
-                    (y + offsetY) * caveNoiseScale
-                );
-
-                /// しきい値で壁か空洞か決定
-                if (noise < caveThreshold)
-                {
-                    caveMap[x, y] = false;
-                }
-                else
-                {
-                    caveMap[x, y] = true;
-                }
-            }
-        }
-    }
-
-    /// <summary>
-    /// セルオートマトンを1ステップ進める
-    /// </summary>
-    private bool[,] DoCellularStep(bool[,] map)
-    {
-        bool[,] newMap = new bool[width, maxHeight + 1];
-
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y <= maxHeight; y++)
-            {
-                int wallCount = CountNeighborWalls(map, x, y);
-
-                /// 壁が多ければ壁にする
-                if (wallCount >= wallThreshold)
-                {
-                    newMap[x, y] = true;
-                }
-                else
-                {
-                    newMap[x, y] = false;
-                }
-            }
-        }
-
-        return newMap;
-    }
-
-    /// <summary>
-    /// 周囲8マスの壁の数を数える
-    /// </summary>
-    private int CountNeighborWalls(bool[,] map, int centerX, int centerY)
-    {
-        int count = 0;
-
-        for (int x = centerX - 1; x <= centerX + 1; x++)
-        {
-            for (int y = centerY - 1; y <= centerY + 1; y++)
-            {
-                /// 自分自身は無視する
-                if (x == centerX && y == centerY)
-                {
-                    continue;
-                }
-
-                /// 範囲外は壁として扱う
-                if (x < 0 || x >= width || y < 0 || y > maxHeight)
-                {
-                    count++;
-                }
-                else if (map[x, y])
-                {
-                    count++;
-                }
-            }
-        }
-
-        return count;
-    }
-
-    private TileBase SelectTileForDepthAndLayer(int depth, int surfaceHeight)
-    {
-        /// 地表からの相対的な深さ
         int relativeDepth = surfaceHeight - depth;
 
         TileData selectedBase = null;
 
-        /// 通常ブロックを選択
         foreach (TileData data in tileDefinitions)
         {
-            /// 鉱石は無視
             if (data.IsOre)
             {
                 continue;
             }
 
-            /// 相対深さ範囲外なら無視
+            if (data.Biome != BiomeType.Any)
+            {
+                if (isForest && data.Biome != BiomeType.Forest)
+                {
+                    continue;
+                }
+
+                if (!isForest && data.Biome != BiomeType.Plain)
+                {
+                    continue;
+                }
+            }
+
             if (relativeDepth < data.StartDepth || relativeDepth > data.EndDepth)
             {
                 continue;
             }
 
-            /// より深い層用のものを優先する
             if (selectedBase == null || data.StartDepth > selectedBase.StartDepth)
             {
                 selectedBase = data;
             }
         }
 
-        /// 石層なら鉱石抽選
         bool isStoneLayer = relativeDepth >= 3;
 
         if (isStoneLayer)
@@ -304,6 +255,19 @@ public class TerrainGenerator2D : MonoBehaviour
                 if (!ore.IsOre)
                 {
                     continue;
+                }
+
+                if (ore.Biome != BiomeType.Any)
+                {
+                    if (isForest && ore.Biome != BiomeType.Forest)
+                    {
+                        continue;
+                    }
+
+                    if (!isForest && ore.Biome != BiomeType.Plain)
+                    {
+                        continue;
+                    }
                 }
 
                 if (relativeDepth < ore.StartDepth || relativeDepth > ore.EndDepth)
@@ -320,7 +284,6 @@ public class TerrainGenerator2D : MonoBehaviour
             }
         }
 
-        /// 通常ブロックを返す
         if (selectedBase != null)
         {
             return selectedBase.Tile;
