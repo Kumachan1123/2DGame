@@ -22,3 +22,4 @@ MonoBehaviour:
   IsMinable: 1
   Hardness: 0
   DropPrefab: {fileID: 175595803387897555, guid: 2606f9c7c339cc2419c63c3458af4e52, type: 3}
+  Icon: {fileID: 7647240639167449756, guid: 32c5734b37176e4418cb18e0671904b3, type: 3}

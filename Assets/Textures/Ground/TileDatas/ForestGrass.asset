@@ -19,6 +19,7 @@ MonoBehaviour:
   EndDepth: 0
   Probability: 0
   Biome: 2
-  IsMinable: 0
+  IsMinable: 1
   Hardness: 0
   DropPrefab: {fileID: 1441185443990005074, guid: 55a74eab8cf331e4c88dfafc4a807930, type: 3}
+  Icon: {fileID: -6298536910282190341, guid: 3f1e6e924e2945b4f9af78fc5e37bea9, type: 3}
