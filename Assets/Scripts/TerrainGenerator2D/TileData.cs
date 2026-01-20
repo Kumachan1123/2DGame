@@ -36,4 +36,16 @@ public class TileData : ScriptableObject
     /// </summary>
     [Range(0f, 1f)]
     public float Probability;
+
+    /// <summary>
+    /// このタイルが対応するバイオーム
+    /// </summary>
+    public BiomeType Biome;
+    public enum BiomeType
+    {
+        Any,
+        Plain,
+        Forest,
+    }
+
 }

@@ -18,3 +18,4 @@ MonoBehaviour:
   StartDepth: 0
   EndDepth: 0
   Probability: 0
+  Biome: 1
