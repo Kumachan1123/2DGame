@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a6096205e91634b9abffd58bcc37a3, type: 3}
+  m_Name: Trunk
+  m_EditorClassIdentifier: Assembly-CSharp::TileData
+  Name: Trunk
+  Tile: {fileID: 11400000, guid: 8073c4517d108704f946a3c7d8f3f3f8, type: 2}
+  IsOre: 0
+  StartDepth: 0
+  EndDepth: 0
+  Probability: 0
+  Biome: 0
+  IsMinable: 1
+  Hardness: 0
+  DropPrefab: {fileID: 7576621531685561415, guid: 2185eb92be0bcda4e92a56e51cb8ebb1, type: 3}
