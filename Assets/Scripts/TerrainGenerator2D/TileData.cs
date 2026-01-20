@@ -59,5 +59,9 @@ public class TileData : ScriptableObject
     /// ドロップするアイテムのプレハブ
     /// </summary>
     public GameObject DropPrefab;
+    /// <summary>
+    /// アイテムのアイコン
+    /// </summary>
+    public Sprite Icon;
 
 }

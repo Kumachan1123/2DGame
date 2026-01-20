@@ -97,14 +97,17 @@ public class TerrainGenerator2D : MonoBehaviour
     /// </summary>
     private void Awake()
     {
+
+
+    }
+    private void ReadTileDefinitions()
+    {
         /// タイル定義一覧を取得
         if (tileDefinitionsSO != null)
         {
             tileDefinitions = tileDefinitionsSO.TileDefinitionList;
         }
-
     }
-
     /// <summary>
     /// 開始時に地形を生成する
     /// </summary>
@@ -133,6 +136,7 @@ public class TerrainGenerator2D : MonoBehaviour
     /// </summary>
     public void GenerateFromEditor()
     {
+        ReadTileDefinitions();
         GenerateTerrain();
     }
 
