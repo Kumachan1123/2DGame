@@ -18,3 +18,7 @@ MonoBehaviour:
   StartDepth: 23
   EndDepth: 117
   Probability: 0.02
+  Biome: 0
+  IsMinable: 0
+  Hardness: 0
+  DropPrefab: {fileID: 9151808857898226536, guid: 24a12ba1fbbecce4981453bccc8afc91, type: 3}

@@ -19,9 +19,13 @@ public class TerrainGenerator2D : MonoBehaviour
     public Tilemap groundTilemap;
 
     /// <summary>
+    /// 使用するタイル定義の一覧(スクリプタブルオブジェクト）
+    /// </summary>
+    public TileDefinitions tileDefinitionsSO;
+    /// <summary>
     /// 使用するタイル定義の一覧
     /// </summary>
-    public List<TileData> tileDefinitions = new List<TileData>();
+    private List<TileData> tileDefinitions = new List<TileData>();
 
     /// <summary>
     /// 横方向の生成サイズ
@@ -87,6 +91,19 @@ public class TerrainGenerator2D : MonoBehaviour
 
     private CaveGenerator caveGenerator;
     private ForestGenerator forestGenerator;
+
+    /// <summary>
+    /// 起動時の処理
+    /// </summary>
+    private void Awake()
+    {
+        /// タイル定義一覧を取得
+        if (tileDefinitionsSO != null)
+        {
+            tileDefinitions = tileDefinitionsSO.TileDefinitionList;
+        }
+
+    }
 
     /// <summary>
     /// 開始時に地形を生成する

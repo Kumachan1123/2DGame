@@ -47,5 +47,17 @@ public class TileData : ScriptableObject
         Plain,
         Forest,
     }
+    /// <summary>
+    /// 採掘可能かどうか
+    /// </summary>
+    public bool IsMinable;
+    /// <summary>
+    /// 硬さ（採掘にかかる時間などに影響）
+    /// </summary>
+    public float Hardness;
+    /// <summary>
+    /// ドロップするアイテムのプレハブ
+    /// </summary>
+    public GameObject DropPrefab;
 
 }
