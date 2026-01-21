@@ -103,6 +103,7 @@ public class PlacementSystem
                 {
                     slot.tileData = null;
                     slot.stackCount = 0;
+                    inventory.inventoryUI.RefreshAll();
                 }
 
                 return;
