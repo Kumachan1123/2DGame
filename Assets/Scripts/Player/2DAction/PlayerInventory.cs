@@ -16,6 +16,9 @@ public class PlayerInventory : MonoBehaviour
     public int slotCount = 45;
     public InventorySlot[] slots;
     public int selectedSlotIndex = 0;
+    public InventoryUI inventoryUI;
+
+    public InventoryUI InventoryUI => inventoryUI;
 
     /// <summary>
     /// Inventory に変更があったときに発火するイベント

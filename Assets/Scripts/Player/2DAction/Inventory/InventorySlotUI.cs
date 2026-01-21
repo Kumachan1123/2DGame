@@ -12,13 +12,7 @@ public class InventorySlotUI : MonoBehaviour
     /// </summary>
     public void Refresh()
     {
-        // デバッグログを追加
-        // スロットの有無
-        Debug.Log($"InventorySlotUI: Refresh called for slot with item {(slot != null && slot.tileData != null ? slot.tileData.name : "null")}");
-        // タイルデータの有無
-        Debug.Log($"InventorySlotUI: Slot tileData is {(slot != null ? (slot.tileData != null ? "not null" : "null") : "slot is null")}");
-        // アイコンの有無
-        Debug.Log($"InventorySlotUI: Icon is {(icon != null ? "not null" : "null")}");
+
         if (slot != null && slot.tileData != null && icon != null)
         {
             icon.sprite = slot.tileData.Icon;
