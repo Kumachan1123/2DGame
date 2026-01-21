@@ -34,7 +34,14 @@ public class InventoryUI : MonoBehaviour
         // 全スロットUIを更新
         foreach (var s in slotUIs)
         {
+            Debug.Log("SlotUpdate");
+
             s.Refresh();
+            if (s.slot.tileData != null)
+            {
+                Debug.Log($"このスロットのアイテム：{s.slot.tileData.Name}");
+                Debug.Log($"現在の所持数：{s.slot.stackCount}");
+            }
         }
     }
 
