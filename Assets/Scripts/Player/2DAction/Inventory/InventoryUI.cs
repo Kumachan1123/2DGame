@@ -34,14 +34,24 @@ public class InventoryUI : MonoBehaviour
         // 全スロットUIを更新
         foreach (var s in slotUIs)
         {
-            Debug.Log("SlotUpdate");
 
             s.Refresh();
-            if (s.slot.tileData != null)
-            {
-                Debug.Log($"このスロットのアイテム：{s.slot.tileData.Name}");
-                Debug.Log($"現在の所持数：{s.slot.stackCount}");
-            }
+
+        }
+
+
+
+    }
+
+    private void Update()
+    {
+        // 選択中スロットの色更新
+        for (int i = 0; i < slotUIs.Count; i++)
+        {
+            if (i == inventory.selectedSlotIndex)
+                slotUIs[i].frame.color = slotUIs[i].selectedFrameColor;
+            else
+                slotUIs[i].frame.color = slotUIs[i].normalFrameColor;
         }
     }
 
@@ -50,5 +60,13 @@ public class InventoryUI : MonoBehaviour
         // 忘れずにイベント解除
         if (inventory != null)
             inventory.OnInventoryChanged -= RefreshAll;
+    }
+
+    /// <summary>
+    /// スロット選択処理
+    /// </summary>  
+    public void SelectSlot(int index)
+    {
+        inventory.selectedSlotIndex = index;
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 [System.Serializable]
 public class InventorySlot
@@ -89,5 +90,31 @@ public class PlayerInventory : MonoBehaviour
         }
 
         OnInventoryChanged?.Invoke();
+    }
+
+    private void Update()
+    {
+        // マウスのスクロールで選択スロットを変更
+        float scroll = Mouse.current.scroll.ReadValue().y;
+        if (scroll > 0f) SelectPrevious();
+        else if (scroll < 0f) SelectNext();
+    }
+    /// <summary>
+    /// 前のスロットを選択
+    /// </summary>
+    public void SelectNext()
+    {
+
+        selectedSlotIndex++;
+        if (selectedSlotIndex >= slots.Length) selectedSlotIndex = 0;
+    }
+
+    /// <summary>
+    /// 次のスロットを選択
+    /// </summary>
+    private void SelectPrevious()
+    {
+        selectedSlotIndex--;
+        if (selectedSlotIndex < 0) selectedSlotIndex = slots.Length - 1;
     }
 }
