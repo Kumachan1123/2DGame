@@ -1,21 +1,28 @@
 /*
  *      CameraTracker.cs
- *      プレイヤーの動きを追従するカメラスクリプト
+ *      プレイヤーを少し遅れて追従するカメラ
  */
 using UnityEngine;
 
 public class CameraTracker : MonoBehaviour
 {
-    [SerializeField] private GameObject m_player;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    [SerializeField] private GameObject m_player;     // 追従対象のプレイヤー
+    [SerializeField] private float m_followSpeed = 5.0f; // 追従のなめらかさ
 
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(m_player.transform.position.x, m_player.transform.position.y, transform.position.z);
+        // プレイヤーの位置を取得
+        Vector3 targetPos = new Vector3(
+            m_player.transform.position.x,
+            m_player.transform.position.y,
+            transform.position.z
+        );
+
+        // 現在位置から目標位置へなめらかに移動
+        transform.position = Vector3.Lerp(
+            transform.position,
+            targetPos,
+            m_followSpeed * Time.deltaTime
+        );
     }
 }

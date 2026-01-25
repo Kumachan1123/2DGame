@@ -16,6 +16,11 @@ public class ActionPlayer : MonoBehaviour
     [Tooltip("地面判定用のタグ")]
     private string m_groundTag = "Ground";
 
+    [Header("デッドゾーン判定")]
+    [SerializeField]
+    [Tooltip("デッドゾーンのタグ")]
+    private string m_deadZoneTag = "DeadZone";
+
     [SerializeField]
     [Tooltip("地面と判定する法線の角度範囲（度）")]
     private float m_groundAngleThreshold = 45f;
@@ -32,6 +37,24 @@ public class ActionPlayer : MonoBehaviour
     [Header("背景")]
     [SerializeField]
     private ParallaxBackground m_parallaxBackground;
+    [Header("ダッシュ設定")]
+    [SerializeField]
+    [Tooltip("ダッシュ速度")]
+    private float m_dashSpeed = 15f;
+
+    [SerializeField]
+    [Tooltip("ダッシュ継続時間")]
+    private float m_dashDuration = 0.2f;
+
+    [SerializeField]
+    [Tooltip("ダブルタップと判定する最大時間")]
+    private float m_doubleTapTime = 0.3f;
+
+    [SerializeField]
+    [Tooltip("通常時の重力")]
+    private float m_normalGravityScale = 3f;
+
+
 
     // 内部変数
     private bool m_isMoving;
@@ -45,6 +68,15 @@ public class ActionPlayer : MonoBehaviour
     private SpriteRenderer m_spriteRenderer;
     private Collider2D m_collider2d;
     private float m_jumpTime;  // ジャンプしてからの経過時間
+    // デッドゾーンに触れた時に、最後に着地した地点を保存する用の座標
+    private Vector2 m_lastGroundedPosition;
+    private float m_lastLeftTapTime;    // 左入力の最後の時刻
+    private float m_lastRightTapTime;   // 右入力の最後の時刻
+    private bool m_isDashing;           // ダッシュ中かどうか
+    private float m_dashTimer;          // ダッシュ残り時間
+    private int m_dashDirection;        // ダッシュ方向（-1:左, 1:右）
+    private bool m_prevLeftPressed;   // 前フレームで左が押されていたか
+    private bool m_prevRightPressed;  // 前フレームで右が押されていたか
 
     private void Awake()
     {
@@ -145,10 +177,19 @@ public class ActionPlayer : MonoBehaviour
     /// </summary>
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // 地面タグとの接触をチェック
         if (collision.gameObject.CompareTag(m_groundTag))
         {
             CheckGroundContact(collision);
+            if (m_isGrounded) m_lastGroundedPosition = transform.position;
         }
+        // デッドゾーンタグとの接触をチェック
+        else if (collision.gameObject.CompareTag(m_deadZoneTag))
+        {
+            // 最後に着地した地点に戻す
+            m_rigidbody2d.position = m_lastGroundedPosition;
+        }
+
     }
 
     /// <summary>
@@ -202,11 +243,27 @@ public class ActionPlayer : MonoBehaviour
     /// </summary>
     private void GetInput()
     {
-        // X方向の入力のみを取得
         Vector2 moveInput = m_inputReceiver.GetInputValue<Vector2>(ActionPlayerInputReceiver.Actions.MOVE);
         m_inputX = moveInput.x;
 
-        // 移動判定
+        bool leftPressedNow = m_inputX < -0.5f;
+        bool rightPressedNow = m_inputX > 0.5f;
+
+        // 左の「押した瞬間」を検出
+        if (leftPressedNow && !m_prevLeftPressed)
+        {
+            CheckDoubleTap(-1);
+        }
+
+        // 右の「押した瞬間」を検出
+        if (rightPressedNow && !m_prevRightPressed)
+        {
+            CheckDoubleTap(1);
+        }
+
+        m_prevLeftPressed = leftPressedNow;
+        m_prevRightPressed = rightPressedNow;
+
         if (Mathf.Abs(m_inputX) > 0.01f)
         {
             m_isMoving = true;
@@ -217,6 +274,8 @@ public class ActionPlayer : MonoBehaviour
             m_isMoving = false;
         }
     }
+
+
 
     /// <summary>
     /// ジャンプ処理
@@ -255,18 +314,86 @@ public class ActionPlayer : MonoBehaviour
     /// </summary>
     private void Move()
     {
-        // X方向の移動速度を計算
-        float moveVelocityX = m_inputX * m_moveSpeed;
+        if (m_isDashing)
+        {
+            // ダッシュ中は横方向にのみ強制移動
+            m_rigidbody2d.linearVelocity = new Vector2(m_dashDirection * m_dashSpeed, 0f);
 
-        // Y方向の速度は維持（重力とジャンプのため）
+            // 残り時間を減らす
+            m_dashTimer -= Time.fixedDeltaTime;
+
+            // ダッシュ終了処理
+            if (m_dashTimer <= 0f)
+            {
+                EndDash();
+            }
+
+            return;
+        }
+
+        // 通常移動
+        float moveVelocityX = m_inputX * m_moveSpeed;
         Vector2 currentVelocity = m_rigidbody2d.linearVelocity;
         m_rigidbody2d.linearVelocity = new Vector2(moveVelocityX, currentVelocity.y);
 
-        // 背景の更新
         if (m_parallaxBackground != null)
         {
             m_parallaxBackground.StartScroll(transform.position);
         }
+    }
+
+    /// <summary>
+    /// ダブルタップ入力のチェック
+    /// </summary>
+    private void CheckDoubleTap(int direction)
+    {
+        float currentTime = Time.time;
+
+        if (direction < 0)
+        {
+            if (currentTime - m_lastLeftTapTime <= m_doubleTapTime)
+            {
+                StartDash(-1);
+            }
+            m_lastLeftTapTime = currentTime;
+        }
+        else if (direction > 0)
+        {
+            if (currentTime - m_lastRightTapTime <= m_doubleTapTime)
+            {
+                StartDash(1);
+            }
+            m_lastRightTapTime = currentTime;
+        }
+    }
+
+    /// <summary>
+    /// ダッシュを開始
+    /// </summary>
+    private void StartDash(int direction)
+    {
+        // すでにダッシュ中なら無視
+        if (m_isDashing) return;
+
+        m_isDashing = true;
+        m_dashDirection = direction;
+        m_dashTimer = m_dashDuration;
+
+        // 重力を一時的に無効化
+        m_rigidbody2d.gravityScale = 0f;
+
+        // Y方向の速度をゼロにする
+        m_rigidbody2d.linearVelocity = new Vector2(0f, 0f);
+    }
+    /// <summary>
+    /// ダッシュ終了処理
+    /// </summary>
+    private void EndDash()
+    {
+        m_isDashing = false;
+
+        // 重力を元に戻す
+        m_rigidbody2d.gravityScale = m_normalGravityScale;
     }
 
     /// <summary>
