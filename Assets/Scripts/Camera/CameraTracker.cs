@@ -6,11 +6,11 @@ using UnityEngine;
 
 public class CameraTracker : MonoBehaviour
 {
-    private GameObject m_player;
+    [SerializeField] private GameObject m_player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        m_player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
     // Update is called once per frame
