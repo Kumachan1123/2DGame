@@ -116,6 +116,8 @@ public class TerrainGenerator2D : MonoBehaviour
 #if !UNITY_EDITOR
         GenerateTerrain();
 #endif
+        // プレイヤーを草地にスポーンさせる
+        GetComponent<PlayerSpawner>()?.SpawnPlayerOnGrass();
     }
 
 #if UNITY_EDITOR
