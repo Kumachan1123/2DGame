@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7870169389072395300}
   - component: {fileID: 4395410788738110219}
   - component: {fileID: -1281601768277539337}
+  - component: {fileID: 9194313080500364683}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -195,3 +196,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   m_walkSpeed: 1
   m_turnAtEdge: 1
+  m_groundCheckDistance: 0.5
+  m_edgeCheckOffset: 0.3
+  m_wallCheckDistance: 0.3
+--- !u!114 &9194313080500364683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826526722641918983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c749f4e2294ce44a21f98cddb18af7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyCollision

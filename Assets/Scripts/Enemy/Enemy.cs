@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour
     private bool m_facingRight = true;
     // 連続反転防止用
     private float m_turnCooldown = 0f;
+    // 死んだか
+    private bool m_isDead = false;
 
     void Start()
     {
@@ -51,7 +53,7 @@ public class Enemy : MonoBehaviour
         }
 
         // 歩行処理
-        Walk();
+        if (!m_isDead) Walk();
 
         // 地面の端チェック
         if (m_turnAtEdge && m_turnCooldown <= 0f)
@@ -159,4 +161,7 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawLine(transform.position, (Vector2)transform.position + wallDir * m_wallCheckDistance);
     }
 #endif
+
+    // 以下、変数を外部から参照・変更するためのプロパティ
+    public bool IsDead { get => m_isDead; set => m_isDead = value; }
 }

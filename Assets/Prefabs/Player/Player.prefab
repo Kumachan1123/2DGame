@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7888475477748505502}
   - component: {fileID: 5235937111294592399}
   - component: {fileID: 1351373391064710863}
+  - component: {fileID: 736502922296623402}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -240,7 +241,25 @@ MonoBehaviour:
   m_moveSpeed: 5
   m_jumpForce: 10
   m_groundTag: Ground
+  m_deadZoneTag: DeadZone
   m_groundAngleThreshold: 45
   m_normalMaterial: {fileID: 0}
   m_airMaterial: {fileID: 0}
   m_parallaxBackground: {fileID: 0}
+  m_dashSpeed: 15
+  m_dashDuration: 0.2
+  m_doubleTapTime: 0.3
+  m_normalGravityScale: 3
+--- !u!114 &736502922296623402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407984810969752742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b147f5b88b3576844a2fca1c552fb953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHP
+  m_initialLives: 3
