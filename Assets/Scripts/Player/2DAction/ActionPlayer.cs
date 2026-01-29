@@ -68,6 +68,7 @@ public class ActionPlayer : MonoBehaviour
     private SpriteRenderer m_spriteRenderer;
     private Collider2D m_collider2d;
     private float m_jumpTime;  // ジャンプしてからの経過時間
+    private AfterImageEmitter m_afterImageEmitter;
     // デッドゾーンに触れた時に、最後に着地した地点を保存する用の座標
     private Vector2 m_lastGroundedPosition;
     private float m_lastLeftTapTime;    // 左入力の最後の時刻
@@ -85,6 +86,7 @@ public class ActionPlayer : MonoBehaviour
         m_rigidbody2d = GetComponent<Rigidbody2D>();
         m_spriteRenderer = GetComponent<SpriteRenderer>();
         m_collider2d = GetComponent<Collider2D>();
+        m_afterImageEmitter = GetComponent<AfterImageEmitter>();
 
         // Rigidbody2Dの設定を強制
         m_rigidbody2d.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
@@ -379,18 +381,26 @@ public class ActionPlayer : MonoBehaviour
         m_dashDirection = direction;
         m_dashTimer = m_dashDuration;
 
+        // 残像開始
+        if (m_afterImageEmitter != null) m_afterImageEmitter.StartEmit();
+
         // 重力を一時的に無効化
         m_rigidbody2d.gravityScale = 0f;
 
         // Y方向の速度をゼロにする
-        m_rigidbody2d.linearVelocity = new Vector2(0f, 0f);
+        m_rigidbody2d.linearVelocity = Vector2.zero;
     }
+
     /// <summary>
     /// ダッシュ終了処理
     /// </summary>
     private void EndDash()
     {
         m_isDashing = false;
+
+        // 残像停止
+        if (m_afterImageEmitter != null) m_afterImageEmitter.StopEmit();
+
 
         // 重力を元に戻す
         m_rigidbody2d.gravityScale = m_normalGravityScale;
@@ -446,8 +456,6 @@ public class ActionPlayer : MonoBehaviour
     /// <summary>
     /// 地面にいるかどうか
     /// </summary>
-    public bool IsGrounded()
-    {
-        return m_isGrounded;
-    }
+
+    public bool IsGourded { get => m_isGrounded; set => m_isGrounded = value; }
 }
