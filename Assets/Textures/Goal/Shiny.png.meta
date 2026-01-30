@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Goal
+      name: Shiny
       rect:
         serializedVersion: 2
         x: 4
         y: 15
-        width: 297
+        width: 300
         height: 300
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Goal: 8748041733672366385
+      Shiny: 8748041733672366385
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
