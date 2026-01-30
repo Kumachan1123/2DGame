@@ -10,7 +10,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - SolidObjects
@@ -18,7 +18,7 @@ TagManager:
   - Sky
   - Ground
   - Bloom
-  - 
+  - Enemy
   - 
   - 
   - 
