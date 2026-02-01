@@ -514,6 +514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaySceneManager
   m_fade: {fileID: 26523889}
   m_inputReceiver: {fileID: 0}
+  m_nextSceneName: PaletteSelectScene
+  m_goalObject: {fileID: 1574463829}
 --- !u!4 &196656917
 Transform:
   m_ObjectHideFlags: 0
@@ -23981,6 +23983,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 078364fefe298a0459c4320164d95843, type: 3}
+--- !u!114 &1574463829 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2078351939993910495, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
+  m_PrefabInstance: {fileID: 2105639795677125864}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84117175c84946b4097a572252260e09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Goal
 --- !u!1 &1588561052
 GameObject:
   m_ObjectHideFlags: 0
@@ -24127,7 +24140,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589887257}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1589887260
 Camera:
   m_ObjectHideFlags: 0
@@ -24558,7 +24571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2042183369
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24770,6 +24783,22 @@ PrefabInstance:
     - target: {fileID: 2175306037273376917, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
       propertyPath: m_Name
       value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633184939282508420, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5015002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633184939282508420, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
+      propertyPath: m_Size.y
+      value: 2.5207274
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633184939282508420, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6940797
+      objectReference: {fileID: 0}
+    - target: {fileID: 3633184939282508420, guid: c0bc09ad29e7ce943a59670d8d0780e8, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4744363
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -97,7 +97,6 @@ public class Enemy : MonoBehaviour
         // クールダウンを設定（0.3秒間は再度反転しない）
         m_turnCooldown = 0.3f;
 
-        Debug.Log($"敵が反転しました！ 向き: {(m_facingRight ? "右" : "左")}");
     }
 
     /// <summary>

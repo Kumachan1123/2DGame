@@ -10,6 +10,14 @@ public class PlaySceneManager : MonoBehaviour
     // インプットレシーバー
     [SerializeField, Header("インプットレシーバー")]
     private PlayInputReceiver m_inputReceiver;
+    // 遷移先のシーン
+    [SerializeField, Header("遷移先のシーン")]
+    private string m_nextSceneName = "PaletteSelectScene";
+    // ゴールオブジェクト
+    [SerializeField, Header("ゴールオブジェクト")]
+    private Goal m_goalObject;
+    // ゴール処理がされたか
+    private bool m_isGoalProcessed = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,8 +36,10 @@ public class PlaySceneManager : MonoBehaviour
             // アプリケーション終了
             StartCoroutine(ExitGame(0.5f));
         }
-        if (m_inputReceiver.GetInputButton(PlayInputReceiver.Actions.ENTER, PlayInputReceiver.InputType.PRESSED))
+        //if (m_inputReceiver.GetInputButton(PlayInputReceiver.Actions.ENTER, PlayInputReceiver.InputType.PRESSED))
+        if (m_goalObject.IsTouched && !m_isGoalProcessed)
         {
+            m_isGoalProcessed = true;
             StartCoroutine(EnterToSelectScene(.1f));
         }
     }
@@ -52,8 +62,9 @@ public class PlaySceneManager : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         m_fade.FadeOutWithCallback(() =>
-        { // シーンを変える
-            SceneManager.LoadScene("SelectScene");
+        {
+            // シーンを変える
+            SceneManager.LoadScene(m_nextSceneName);
         });
     }
 }
