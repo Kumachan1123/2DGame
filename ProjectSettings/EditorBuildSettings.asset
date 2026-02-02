@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scenes/TerrariaPlayScene.unity
-    guid: 9169e0c8b0b388d46bd852751d37b1c3
+    path: Assets/Scenes/Scenes/Palette/PalettePlayScene.unity
+    guid: fdca87659e4119948a0f883e4658ee95
+  - enabled: 1
+    path: Assets/Scenes/Scenes/Palette/PaletteSelectScene.unity
+    guid: d03f52f51b1402b4dbc0215f0620c79f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5235937111294592399}
   - component: {fileID: 1351373391064710863}
   - component: {fileID: 736502922296623402}
+  - component: {fileID: 6998343701888531551}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -263,3 +264,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHP
   m_initialLives: 3
+--- !u!114 &6998343701888531551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407984810969752742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6fdf3e30db88a45b6cfa6581d7d4d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AfterImageEmitter
+  m_afterImagePrefab: {fileID: 0}
+  m_afterImageColor: {r: 0, g: 1, b: 1, a: 1}
+  m_spawnInterval: 0.05
+  m_requiredSpeed: 5
