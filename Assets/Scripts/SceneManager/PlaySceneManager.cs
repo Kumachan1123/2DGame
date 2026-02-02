@@ -16,12 +16,21 @@ public class PlaySceneManager : MonoBehaviour
     // ゴールオブジェクト
     [SerializeField, Header("ゴールオブジェクト")]
     private Goal m_goalObject;
+    // 動かすUI
+    [SerializeField, Header("動かすUI")]
+    private UIMover m_uiMover;
+
     // ゴール処理がされたか
     private bool m_isGoalProcessed = false;
+    // クリア演出が終わったか
+    private bool m_isClearPerformanceDone = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         m_inputReceiver = GetComponent<PlayInputReceiver>();
+        // ここが大事！
+        m_uiMover.OnMoveComplete += OnUIMoveFinished;
         m_fade.FadeInWithCallback(() =>
         {
 
@@ -36,11 +45,10 @@ public class PlaySceneManager : MonoBehaviour
             // アプリケーション終了
             StartCoroutine(ExitGame(0.5f));
         }
-        //if (m_inputReceiver.GetInputButton(PlayInputReceiver.Actions.ENTER, PlayInputReceiver.InputType.PRESSED))
-        if (m_goalObject.IsTouched && !m_isGoalProcessed)
+        // ゴールに触れたら演出開始だけ
+        if (m_goalObject.IsTouched)
         {
-            m_isGoalProcessed = true;
-            StartCoroutine(EnterToSelectScene(.1f));
+            m_uiMover.StartPerformance = true;
         }
     }
     // 追加：ゲームそのものを終了する（遅延実行）
@@ -67,4 +75,21 @@ public class PlaySceneManager : MonoBehaviour
             SceneManager.LoadScene(m_nextSceneName);
         });
     }
+    private void OnUIMoveFinished()
+    {
+        // もう処理済みなら何もしない
+        if (m_isGoalProcessed) return;
+
+        m_isGoalProcessed = true;
+        StartCoroutine(EnterToSelectScene(3.0f));
+    }
+
+    private void OnDestroy()
+    {
+        if (m_uiMover != null)
+        {
+            m_uiMover.OnMoveComplete -= OnUIMoveFinished;
+        }
+    }
+
 }
