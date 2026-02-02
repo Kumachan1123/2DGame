@@ -297,7 +297,7 @@ public class ActionPlayer : MonoBehaviour
     /// <summary>
     /// ジャンプを実行
     /// </summary>
-    private void Jump()
+    public void Jump()
     {
         // ジャンプ時刻を記録
         m_jumpTime = Time.time;

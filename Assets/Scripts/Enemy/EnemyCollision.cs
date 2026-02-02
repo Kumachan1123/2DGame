@@ -26,8 +26,8 @@ public class EnemyCollision : MonoBehaviour
             // プレイヤーに上から踏まれたら
             if (collision.contacts[0].normal.y < -0.5f)
             {
-                // プレイヤーの着地フラグを立てる
-                collision.gameObject.GetComponent<ActionPlayer>().IsGourded = true;
+                // プレイヤーをジャンプさせる
+                collision.gameObject.GetComponent<ActionPlayer>().Jump();
                 // 敵を上下反転させる
                 m_spriteRenderer.flipY = true;
                 // アニメーションを死亡アニメーションに切り替え
