@@ -19,6 +19,9 @@ public class PlaySceneManager : MonoBehaviour
     // 動かすUI
     [SerializeField, Header("動かすUI")]
     private UIMover m_uiMover;
+    // タイマーUI
+    [SerializeField, Header("タイマーUI")]
+    private TimerCount m_timerCount;
 
     // ゴール処理がされたか
     private bool m_isGoalProcessed = false;
@@ -28,8 +31,11 @@ public class PlaySceneManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // インプットレシーバー取得
         m_inputReceiver = GetComponent<PlayInputReceiver>();
-        // ここが大事！
+
+
+        // UIムーバーの完了イベントに登録
         m_uiMover.OnMoveComplete += OnUIMoveFinished;
         m_fade.FadeInWithCallback(() =>
         {
@@ -49,6 +55,8 @@ public class PlaySceneManager : MonoBehaviour
         if (m_goalObject.IsTouched)
         {
             m_uiMover.StartPerformance = true;
+            // タイマー停止
+            m_timerCount.IsRunning = false;
         }
     }
     // 追加：ゲームそのものを終了する（遅延実行）
@@ -75,6 +83,10 @@ public class PlaySceneManager : MonoBehaviour
             SceneManager.LoadScene(m_nextSceneName);
         });
     }
+    /// <summary>
+    /// UIの移動が完了したときの処理
+    /// UIMoverからInvokeされる
+    /// </summary>
     private void OnUIMoveFinished()
     {
         // もう処理済みなら何もしない
